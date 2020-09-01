@@ -12,6 +12,7 @@ class EightBall extends StatefulWidget {
 }
 
 class _EightBallState extends State<EightBall> {
+  int _ballNumber = 1;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +28,7 @@ class _EightBallState extends State<EightBall> {
       ),
       body: Container(
         child: Center(
-          child: Image.asset('images/ball1.png'),
+          child: Image.asset('images/ball$_ballNumber.png'),
         ),
       ),
     );

@@ -45,6 +45,9 @@ class _EightBallState extends State<EightBall> {
                 _ballNumber = _randomGenerator.nextInt(5) + 1;
               });
             },
+            // This is to prevent splash effect of FlatButton on clicking
+            highlightColor: Colors.transparent,
+            splashColor: Colors.transparent,
           ),
         ),
       ),

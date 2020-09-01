@@ -25,7 +25,11 @@ class _EightBallState extends State<EightBall> {
         ),
         backgroundColor: Colors.blue[800],
       ),
-      body: Container(),
+      body: Container(
+        child: Center(
+          child: Image.asset('images/ball1.png'),
+        ),
+      ),
     );
   }
 }
